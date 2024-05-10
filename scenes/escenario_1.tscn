@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://df4kxlf231ggr"]
+
+[ext_resource type="Texture2D" uid="uid://clqi2bt16plf4" path="res://tile1.svg" id="1_horat"]
+[ext_resource type="PackedScene" uid="uid://2nswtbecqn25" path="res://scenes/player.tscn" id="2_obj2k"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y0yl4"]
+resource_name = "a"
+texture = ExtResource("1_horat")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_j0qf1"]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_y0yl4")
+
+[node name="escenario1" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_j0qf1")
+format = 2
+layer_0/tile_data = PackedInt32Array(655358, 0, 0, 655359, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589832, 0, 0, 589833, 0, 0, 589834, 0, 0, 589835, 0, 0, 589836, 0, 0, 589837, 0, 0, 589838, 0, 0, 589839, 0, 0, 589840, 0, 0, 589841, 0, 0, 589842, 0, 0, 589843, 0, 0, 589844, 0, 0, 589845, 0, 0, 589846, 0, 0, 589847, 0, 0, 589848, 0, 0, 655357, 0, 0, 655356, 0, 0, 655355, 0, 0, 655354, 0, 0, 655353, 0, 0, 655352, 0, 0, 655351, 0, 0, 655350, 0, 0, 655349, 0, 0, 655348, 0, 0, 655347, 0, 0, 655346, 0, 0, 655345, 0, 0, 655344, 0, 0, 655343, 0, 0, 655342, 0, 0, 655341, 0, 0, 655340, 0, 0, 655339, 0, 0, 655338, 0, 0, 655337, 0, 0)
+
+[node name="Node2D" parent="." instance=ExtResource("2_obj2k")]
+position = Vector2(46, 519)
